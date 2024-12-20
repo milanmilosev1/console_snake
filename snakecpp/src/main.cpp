@@ -1,13 +1,13 @@
 #include <iostream>
-#include "map.cpp"
+#include "gameLoop.hpp"
 
 int main(){
 
-    //std::cout<<"cao"<<std::endl;
-    Player p(50, 10, 10);
-    Map m(100, 20, p);
+    Player p(50, 48, 0);
+    Map m(50, 50, p);
 
-    m.printMap();
+    //std::cout<<"cao"<<std::endl;
+    gameLoop(m, p);
     //p.drawPlayer();
     
     return 0;
